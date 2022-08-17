@@ -1,8 +1,15 @@
 import './styles.css';
 
-const Button = () => {
+type Props = {
+    text: string;
+}
+
+const Button = ({ text }: Props) => {
     return (
-        <h1>Button</h1>
+        <div className="button-container">
+            <button className="btn btn-primary">{text}</button>
+        </div>
+
     );
 }
 

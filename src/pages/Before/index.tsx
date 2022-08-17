@@ -1,8 +1,9 @@
+import FormCard from 'components/FormCard';
 import './styles.css';
 
 const Before = () => {
     return (
-        <h1>Before</h1>
+        <FormCard />
     );
 }
 

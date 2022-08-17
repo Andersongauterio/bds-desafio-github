@@ -1,5 +1,5 @@
 import Button from 'components/Button';
-import Form from 'components/Form';
+import Form from 'components/FormCard';
 import InfoCard from 'components/InfoCard';
 import After from 'pages/After';
 import Before from 'pages/Before';
@@ -10,11 +10,14 @@ import './styles.css';
 const Home = () => {
     return (
         <div className="home-container">
-            <h1>Home</h1>
-            <After/>
+            <h1>Desafio Github API</h1>
+            <h4>Bootcamp Spring React - DevSuperior</h4>
+            <Button text="Começar"/>
+            <p>-----------------------------------------------------------------------</p>
             <Before/>
-            <Button/>
-            <Form/>
+            <p>-----------------------------------------------------------------------</p>
+            <After/>
+            <p>-----------------------------------------------------------------------</p>
             <InfoCard/>
         </div>
     );
