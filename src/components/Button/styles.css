@@ -1,0 +1,16 @@
+.button-container {
+    padding-top: 15px;
+}
+
+.button-container .btn {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
+    width: 101px;
+    border-radius: 4px;
+}
+
+.button-container .btn:hover {
+    color: #fff;
+}

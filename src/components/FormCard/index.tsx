@@ -8,6 +8,8 @@ const FormCard = () => {
             <div className="form-container">
                 <input 
                     type="text"
+                    name="github"
+                    className="search-input"
                     placeholder="Usuário Github"
                     />
                 <Button text="Encontrar"/>

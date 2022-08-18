@@ -1,0 +1,29 @@
+.result-container {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    margin: 10px;
+    border: 1px solid #D9D9D9;
+    align-items: center;
+}
+
+.result-title {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.result-description {
+  color: #737373;
+  font-size: 16px;
+
+}
+
+.result-description {
+  color: #737373;
+  font-size: 16px;
+}

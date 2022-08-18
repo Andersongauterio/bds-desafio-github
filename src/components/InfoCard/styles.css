@@ -1,0 +1,36 @@
+.card-container {
+    height: 387px;
+    width: 1251px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+}
+
+.card-picture {
+    width: 247px;
+    height: 247px;
+    margin: 0 30px;
+}
+
+.card-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    border: 1px #d9d9d9 solid;
+    width: 870px;
+    height: 247px;
+    border-radius: 6px;
+    background-color: #FFFF;
+}
+
+.card-info h3 {
+    color: #1890FF;
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 10px;
+}
