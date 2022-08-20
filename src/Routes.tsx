@@ -1,8 +1,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from 'pages/Home';
 import Navbar from 'components/Navbar';
-import Before from 'pages/Before';
-import After from 'pages/After';
+import GitUserInfo from 'pages/GitUserInfo';
 
 const Routes = () => (
   <BrowserRouter>
@@ -11,11 +10,8 @@ const Routes = () => (
       <Route path="/" exact>
         <Home />
       </Route>
-      <Route path="/before" exact>
-        <Before />
-      </Route>
-      <Route path="/after" exact>
-        <After />
+      <Route path="/gituser" exact>
+        <GitUserInfo />
       </Route>
     </Switch>
   </BrowserRouter>

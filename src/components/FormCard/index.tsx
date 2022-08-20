@@ -1,17 +1,12 @@
 import axios from 'axios';
 import Button from 'components/Button';
+import InfoCard from 'components/InfoCard';
 import { useState } from 'react';
+import { GitUser } from 'Types/gitUser';
 import './styles.css';
 
 type FormData = {
   username: string;
-};
-
-type GitUser = {
-  url: string;
-  followers: string;
-  location: String;
-  name: String;
 };
 
 const FormCard = () => {
@@ -34,7 +29,6 @@ const FormCard = () => {
       .get(`https://api.github.com/users/${formData.username}`)
       .then((response) => {
         setgitUser(response.data);
-        console.log(response.data);
       })
       .catch((error) => {
         setgitUser(undefined);
@@ -43,22 +37,31 @@ const FormCard = () => {
   };
 
   return (
-    <div className="form-card-container">
-      <h1>Encontre um perfil Github</h1>
-      <div className="form-container">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="username"
-            className="search-input"
-            placeholder="Usuário Github"
-            value={formData.username}
-            onChange={handleChange}
-          />
-          <Button text="Encontrar" />
-        </form>
+    <>
+      <div className="form-card-container">
+        <h1>Encontre um perfil Github</h1>
+        <div className="form-container">
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="username"
+              className="search-input"
+              placeholder="Usuário Github"
+              value={formData.username}
+              onChange={handleChange}
+            />
+            <Button text="Encontrar" />
+          </form>
+        </div>
       </div>
-    </div>
+      <div>
+        {gitUser && (
+          <div className="infoCard-container">
+            <InfoCard gitUser={gitUser} />
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 
